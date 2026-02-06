@@ -1,9 +1,14 @@
 /********* CONFIG *********/
-// const ADMIN_PIN = "1234";
+const ADMIN_PIN = "1234";
 
 // 🔹 Firebase config (YOURS)
 const firebaseConfig = {
-  // your firebase api key
+  apiKey: "AIzaSyBILALSnDeyTjqEZOOnOtMP9H2M9ErOaO8",
+  authDomain: "balaji-plastic-b1714.firebaseapp.com",
+  projectId: "balaji-plastic-b1714",
+  storageBucket: "balaji-plastic-b1714.firebasestorage.app",
+  messagingSenderId: "208066795917",
+  appId: "1:208066795917:web:1df24d805146574a68c5c4"
 };
 
 // 🔹 Cloudinary config
