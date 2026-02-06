@@ -103,6 +103,6 @@ function orderWhatsApp() {
   msg += `\nTotal: ₹${total}`;
 
   window.open(
-    `https://wa.me/919142192951?text=${encodeURIComponent(msg)}`
+    `https://wa.me/918292666585?text=${encodeURIComponent(msg)}`
   );
 }
