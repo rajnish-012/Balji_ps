@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin – BalaJi Plastic</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Admin Panel</h1>
+  <p>Product Manage Karein</p>
+</header>
+
+<section class="cart-section">
+
+  <h3>🔐 Admin Login</h3>
+  <input type="password" id="adminPin" placeholder="Enter Admin PIN">
+  <button onclick="login()">Login</button>
+
+  <div id="adminArea" style="display:none; margin-top:20px;">
+
+    <h3>➕ Add Product</h3>
+
+    <input type="text" id="pName" placeholder="Product Name">
+    <input type="text" id="pSize" placeholder="Size">
+    <input type="number" id="pPrice" placeholder="Price">
+    <input type="file" id="pImg" accept="image/*">
+    <textarea id="pDesc" placeholder="Description"></textarea>
+
+    <button onclick="addProduct()">Add Product</button>
+
+    <h3 style="margin-top:20px;">📦 Existing Products</h3>
+    <ul id="adminProductList"></ul>
+
+  </div>
+
+</section>
+
+<script src="admin.js"></script>
+</body>
+</html>

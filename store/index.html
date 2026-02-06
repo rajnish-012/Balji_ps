@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BalaJi Plastic Store</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>BalaJi Plastic Store</h1>
+  <p>Wholesale & Retail Plastic Products</p>
+</header>
+
+<main class="products" id="productList">
+  <!-- PRODUCTS LOAD FROM FIREBASE -->
+</main>
+
+<section class="cart-section">
+  <h2>🛒 Cart Items</h2>
+  <ul id="cartItems"></ul>
+  <h3 id="totalPrice">Total: ₹0</h3>
+</section>
+
+<div class="cart-bar">
+  <button id="cartBtn" onclick="orderWhatsApp()">
+    🛒 Cart (0) • Order on WhatsApp
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
